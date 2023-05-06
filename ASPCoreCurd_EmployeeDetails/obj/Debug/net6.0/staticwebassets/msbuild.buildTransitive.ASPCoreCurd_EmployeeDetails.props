@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ASPCoreCurd_EmployeeDetails.props" />
+</Project>

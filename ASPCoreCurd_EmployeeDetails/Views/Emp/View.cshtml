@@ -1,0 +1,35 @@
+﻿@model ASPCoreCurd_EmployeeDetails.Models.EmpModel
+
+@{
+}
+
+<h1>Update Details</h1>
+<form method="post" action="View" class="mt-5">
+    <div class="mb-3">
+        <label for="">Emp Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="">Emp Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="">Email Address</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label for="">Salary</label>
+        <input type="number" class="form-control" asp-for="Salary">
+    </div>
+    <div class="mb-3">
+        <label for="">Date Of Birth</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth">
+    </div>
+    <div class="mb-3">
+        <label for="">Department</label>
+        <input type="text" class="form-control" asp-for="Department">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <button type="submit" asp-area="" asp-action="Delete" asp-controller="Emp" class="btn btn-danger">Delete</button>
+</form>

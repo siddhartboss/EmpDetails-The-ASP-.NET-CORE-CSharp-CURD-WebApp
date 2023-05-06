@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ASPCoreCurd_EmployeeDetails.props" />
+</Project>

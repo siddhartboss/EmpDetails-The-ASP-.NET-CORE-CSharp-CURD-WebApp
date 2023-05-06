@@ -1,0 +1,39 @@
+﻿@model List<ASPCoreCurd_EmployeeDetails.Models.EmpModel>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Emp Details</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Salary</th>
+            <th>DateOfBirth</th>
+            <th>Department</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.Salary</td>
+            <td>@item.DateOfBirth</td>
+            <td>@item.Department</td>
+            <td><a href="Emp/View/@item.Id">View</a></td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="Emp" asp-route-id=@item.Id asp-action="View">EmpDetails</a></td>
+        </tr>
+        }
+    </tbody>
+
+</table>
